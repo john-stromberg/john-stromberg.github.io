@@ -1,34 +1,108 @@
-<!DOCTYPE html>
-<head>Jack Stromberg</head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quantitative research, advisor tools, and financial planning projects.">
+  <title>Project Portfolio | Quantitative Research and Financial Software</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172b3a;
+      background: #f4f7f8;
+      line-height: 1.55;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #075b7d; }
+    a:hover { color: #003e58; }
+    a:focus-visible { outline: 3px solid #d48700; outline-offset: 3px; }
+    .wrap { max-width: 70rem; margin: auto; padding: 0 1.5rem; }
+    .skip { position: absolute; top: -4rem; left: 1rem; padding: .5rem; background: white; }
+    .skip:focus { top: 1rem; }
+    header { background: #102e3e; color: #fff; padding: 4.5rem 0 4rem; }
+    header a { color: #c1eaff; }
+    header a:hover { color: #fff; }
+    .eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 14ch; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.1; margin: .4rem 0 1rem; }
+    .intro { max-width: 42rem; font-size: 1.1rem; color: #d7e9ef; }
+    main { padding: 3rem 0 4rem; }
+    section + section { margin-top: 3rem; }
+    h2 { font-size: 1.6rem; margin: 0 0 .4rem; }
+    .section-note { margin: 0 0 1.5rem; color: #435b69; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem; }
+    .card { background: #fff; border: 1px solid #d7e2e7; border-radius: .65rem; padding: 1.4rem; }
+    .card h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+    .card p { margin: 0 0 1rem; }
+    .tag { color: #435b69; font-size: .85rem; font-weight: 600; }
+    footer { border-top: 1px solid #d7e2e7; padding: 1.5rem 0; color: #435b69; }
+    footer p { margin: 0; }
+  </style>
+</head>
 <body>
-    <img src="" alt="Jack Headshot">
-    <h3>paragraph one</h3>
-    <h3>paragrapsh two</h3>
-    <h3>my links</h3>
-    <ul>
-        <li><a href="linkedin.com" target="linkedin" ></a></li>
-        <li><a href="github.com" target="github" ></a></li>
-        <li><a href="kaggle.com" target="kaggle" ></a></li>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th colspan="4"> Favorites </th>
-            </tr>
-            <tr>
-                <th>Movies</th>
-                <th>Books</th>
-                <th>Hobbies</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>The Dark Knight</td>
-                <td>To Kill A Mockingbird</td>
-                <td>Golf</td>
-
-            </tr>
-        </tbody>
-
-    </table>
+  <a class="skip" href="#projects">Skip to projects</a>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Project portfolio</p>
+      <h1>Research and financial software</h1>
+      <p class="intro">Independent projects exploring portfolio analytics, fixed income,
+        econometrics, advisor workflows, and financial planning.</p>
+      <a href="https://github.com/john-stromberg">View the GitHub profile</a>
+    </div>
+  </header>
+  <main id="projects" class="wrap">
+    <section aria-labelledby="collections">
+      <h2 id="collections">Project collections</h2>
+      <p class="section-note">Each collection preserves its projects' own setup and entry points.</p>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/portfolio-analytics">Portfolio Analytics</a></h3>
+          <p>Optimization, rebalancing, risk, and related portfolio research.</p>
+          <span class="tag">Python / .NET</span>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/fixed-income-analytics">Fixed Income Analytics</a></h3>
+          <p>Bond, credit, mortgage, and trading analytics projects.</p>
+          <span class="tag">Python</span>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/quant-research-r">Quantitative Research in R</a></h3>
+          <p>Econometrics, forecasting, factors, and allocation research.</p>
+          <span class="tag">R</span>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/advisor-platform">Advisor Platform</a></h3>
+          <p>Independent projects for advisor and client workflow tools.</p>
+          <span class="tag">.NET</span>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/wealth-planning-apps">Wealth Planning Apps</a></h3>
+          <p>Planning calculators, dashboards, and a financial data pipeline.</p>
+          <span class="tag">Python / Streamlit</span>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="other-work">
+      <h2 id="other-work">Standalone and historical work</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/returnbydate">ReturnByDate</a></h3>
+          <p>A comparison tool for retailer return and price-matching policies.</p>
+          <span class="tag">Standalone site</span>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/john-stromberg/data-analytics-bootcamp-2019">Data Analytics Bootcamp</a></h3>
+          <p>Historical data analysis assignments and notebooks.</p>
+          <span class="tag">Archive</span>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap"><p>Browse source code and project documentation on
+      <a href="https://github.com/john-stromberg">GitHub</a>.</p></div>
+  </footer>
 </body>
+</html>
