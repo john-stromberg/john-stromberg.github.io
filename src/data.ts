@@ -67,7 +67,7 @@ export const standalone = [
   {
     name: 'ReturnByDate',
     href: 'https://github.com/john-stromberg/returnbydate',
-    note: 'Standalone return calculation utility',
+    note: 'Retailer return and price-matching policy comparison',
   },
   {
     name: 'Data Analytics Bootcamp',

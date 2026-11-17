@@ -28,8 +28,8 @@ export default function App() {
           </nav>
 
           <div className="hero-copy">
-            <p className="brand">{profile.name}</p>
-            <h1>{profile.headline}</h1>
+            <h1 className="brand">{profile.name}</h1>
+            <p className="headline">{profile.headline}</p>
             <p className="lede">{profile.summary}</p>
             <div className="cta-row">
               <a className="btn primary" href="#work">

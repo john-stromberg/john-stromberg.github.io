@@ -90,7 +90,7 @@
   text-wrap: balance;
 }
 
-.hero-copy h1 {
+.headline {
   margin: 0 0 1rem;
   max-width: 16ch;
   font-size: clamp(1.35rem, 3.2vw, 2rem);
