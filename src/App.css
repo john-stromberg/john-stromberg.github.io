@@ -322,11 +322,6 @@ main {
   font-weight: 700;
 }
 
-.link-rows.quiet .row-name {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
 .site-footer {
   width: min(100% - 2.5rem, var(--max));
   margin: 0 auto;

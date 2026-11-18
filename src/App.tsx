@@ -4,7 +4,6 @@ import {
   featured,
   focusLanes,
   profile,
-  standalone,
 } from './data'
 import './App.css'
 
@@ -108,25 +107,6 @@ export default function App() {
                   <span className="row-meta">
                     <span className="count">{item.count}</span>
                     <span className="stack">{item.stack}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="section" id="archive">
-          <div className="section-head">
-            <h2>Standalone / archive</h2>
-            <p>Smaller utilities and preserved teaching material.</p>
-          </div>
-          <ul className="link-rows quiet">
-            {standalone.map((item) => (
-              <li key={item.name}>
-                <a href={item.href} target="_blank" rel="noreferrer">
-                  <span className="row-name">{item.name}</span>
-                  <span className="row-meta">
-                    <span className="stack">{item.note}</span>
                   </span>
                 </a>
               </li>

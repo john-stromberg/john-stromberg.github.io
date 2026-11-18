@@ -62,16 +62,3 @@ export const collections = [
     stack: 'Python / Streamlit',
   },
 ] as const
-
-export const standalone = [
-  {
-    name: 'ReturnByDate',
-    href: 'https://github.com/john-stromberg/returnbydate',
-    note: 'Retailer return and price-matching policy comparison',
-  },
-  {
-    name: 'Data Analytics Bootcamp',
-    href: 'https://github.com/john-stromberg/data-analytics-bootcamp-2019',
-    note: 'Archived teaching materials from 2019',
-  },
-] as const
