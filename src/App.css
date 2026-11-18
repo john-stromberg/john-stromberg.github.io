@@ -227,6 +227,11 @@ main {
   font-size: 0.98rem;
 }
 
+.featured-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
 .featured {
   display: grid;
   gap: 1rem 2rem;

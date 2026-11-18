@@ -22,13 +22,22 @@ export const focusLanes = [
   },
 ] as const
 
-export const featured = {
-  name: 'econkit',
-  href: 'https://github.com/john-stromberg/econkit',
-  stack: 'R',
-  blurb:
-    'R toolkit for asset management and banking: recession indicators, regime detection, scenario engines, ALM/ECL workflows, and a Plumber API surface.',
-} as const
+export const featuredProjects = [
+  {
+    name: 'econkit',
+    href: 'https://github.com/john-stromberg/econkit',
+    stack: 'R',
+    blurb:
+      'R toolkit for asset management and banking: recession indicators, regime detection, scenario engines, ALM/ECL workflows, and a Plumber API surface.',
+  },
+  {
+    name: 'value-creation',
+    href: 'https://github.com/john-stromberg/value-creation',
+    stack: 'Python · Streamlit',
+    blurb:
+      'PE value creation toolkit (pevc) for middle-market portfolio companies — diagnostics, VCP planning, LBO returns, Excel packs, and a Streamlit dashboard.',
+  },
+] as const
 
 export const collections = [
   {

@@ -1,7 +1,7 @@
 import { HeroVisual } from './components/HeroVisual'
 import {
   collections,
-  featured,
+  featuredProjects,
   focusLanes,
   profile,
 } from './data'
@@ -70,28 +70,32 @@ export default function App() {
         <section className="section" id="work">
           <div className="section-head">
             <h2>Featured</h2>
-            <p>A flagship toolkit for asset-management and banking research.</p>
+            <p>Flagship toolkits for research, banking, and PE value creation.</p>
           </div>
-          <article className="featured">
-            <div className="featured-meta">
-              <p className="kicker">Open source</p>
-              <h3>
-                <a href={featured.href} target="_blank" rel="noreferrer">
-                  {featured.name}
+          <div className="featured-list">
+            {featuredProjects.map((project) => (
+              <article key={project.name} className="featured">
+                <div className="featured-meta">
+                  <p className="kicker">Open source</p>
+                  <h3>
+                    <a href={project.href} target="_blank" rel="noreferrer">
+                      {project.name}
+                    </a>
+                  </h3>
+                  <p className="stack">{project.stack}</p>
+                </div>
+                <p className="featured-body">{project.blurb}</p>
+                <a
+                  className="text-link"
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View on GitHub
                 </a>
-              </h3>
-              <p className="stack">{featured.stack}</p>
-            </div>
-            <p className="featured-body">{featured.blurb}</p>
-            <a
-              className="text-link"
-              href={featured.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View on GitHub
-            </a>
-          </article>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="section" id="collections">
