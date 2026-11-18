@@ -73,28 +73,132 @@ export default function App() {
             <p>Flagship toolkits for research, banking, and PE value creation.</p>
           </div>
           <div className="featured-list">
-            {featuredProjects.map((project) => (
-              <article key={project.name} className="featured">
-                <div className="featured-meta">
-                  <p className="kicker">Open source</p>
-                  <h3>
-                    <a href={project.href} target="_blank" rel="noreferrer">
-                      {project.name}
-                    </a>
-                  </h3>
-                  <p className="stack">{project.stack}</p>
-                </div>
-                <p className="featured-body">{project.blurb}</p>
-                <a
-                  className="text-link"
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
+            {featuredProjects.map((project) => {
+              const isPrivate = project.access === 'private'
+
+              return (
+                <article
+                  key={project.name}
+                  className={isPrivate ? 'featured featured-private' : 'featured'}
                 >
-                  View on GitHub
-                </a>
-              </article>
-            ))}
+                  <div className="featured-meta">
+                    <p className="kicker">
+                      {isPrivate ? 'Private project' : 'Open source'}
+                    </p>
+                    <h3>
+                      {isPrivate ? (
+                        project.name
+                      ) : (
+                        <a href={project.href} target="_blank" rel="noreferrer">
+                          {project.name}
+                        </a>
+                      )}
+                    </h3>
+                    <p className="stack">{project.stack}</p>
+                  </div>
+
+                  <div className="featured-main">
+                    <p className="featured-body">{project.blurb}</p>
+                    {isPrivate && 'highlights' in project ? (
+                      <>
+                        <ul className="featured-highlights">
+                          {project.highlights.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                        <svg
+                          className="flow-diagram"
+                          viewBox="0 0 320 40"
+                          role="img"
+                          aria-label="Diagnose, plan, then returns"
+                        >
+                          <title>Diagnose → Plan → Returns</title>
+                          <rect
+                            x="2"
+                            y="8"
+                            width="86"
+                            height="24"
+                            rx="3"
+                            className="flow-node"
+                          />
+                          <text x="45" y="24" textAnchor="middle" className="flow-label">
+                            Diagnose
+                          </text>
+                          <path
+                            d="M96 20 H118"
+                            className="flow-edge"
+                            markerEnd="url(#flow-arrow)"
+                          />
+                          <rect
+                            x="122"
+                            y="8"
+                            width="74"
+                            height="24"
+                            rx="3"
+                            className="flow-node"
+                          />
+                          <text
+                            x="159"
+                            y="24"
+                            textAnchor="middle"
+                            className="flow-label"
+                          >
+                            Plan
+                          </text>
+                          <path
+                            d="M204 20 H226"
+                            className="flow-edge"
+                            markerEnd="url(#flow-arrow)"
+                          />
+                          <rect
+                            x="230"
+                            y="8"
+                            width="86"
+                            height="24"
+                            rx="3"
+                            className="flow-node accent"
+                          />
+                          <text
+                            x="273"
+                            y="24"
+                            textAnchor="middle"
+                            className="flow-label"
+                          >
+                            Returns
+                          </text>
+                          <defs>
+                            <marker
+                              id="flow-arrow"
+                              viewBox="0 0 10 10"
+                              refX="8"
+                              refY="5"
+                              markerWidth="6"
+                              markerHeight="6"
+                              orient="auto-start-reverse"
+                            >
+                              <path d="M0 0 L10 5 L0 10 z" className="flow-arrowhead" />
+                            </marker>
+                          </defs>
+                        </svg>
+                      </>
+                    ) : null}
+                  </div>
+
+                  {isPrivate ? (
+                    <p className="source-note">Source available on request</p>
+                  ) : (
+                    <a
+                      className="text-link"
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View on GitHub
+                    </a>
+                  )}
+                </article>
+              )
+            })}
           </div>
         </section>
 

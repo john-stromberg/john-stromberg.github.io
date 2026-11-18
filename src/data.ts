@@ -25,6 +25,7 @@ export const focusLanes = [
 export const featuredProjects = [
   {
     name: 'econkit',
+    access: 'open-source' as const,
     href: 'https://github.com/john-stromberg/econkit',
     stack: 'R',
     blurb:
@@ -32,10 +33,15 @@ export const featuredProjects = [
   },
   {
     name: 'value-creation',
-    href: 'https://github.com/john-stromberg/value-creation',
+    access: 'private' as const,
     stack: 'Python · Streamlit',
     blurb:
-      'PE value creation toolkit (pevc) for middle-market portfolio companies — diagnostics, VCP planning, LBO returns, Excel packs, and a Streamlit dashboard.',
+      'PE value creation for middle-market portfolio companies — diagnostics → VCP → LBO, Excel packs, and a Streamlit dashboard.',
+    highlights: [
+      'Diagnostics across pricing, working capital, commercial, contracts, pipeline, operations',
+      'VCP initiative planning with LBO returns and Monte Carlo risk',
+      'Excel packs and draft investment packages for IC / bid workflows',
+    ],
   },
 ] as const
 
