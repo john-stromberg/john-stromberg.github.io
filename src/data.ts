@@ -43,7 +43,12 @@ export const featuredProjects = [
     href: 'https://github.com/john-stromberg/econkit',
     stack: 'R',
     blurb:
-      'R toolkit for asset management and banking: recession indicators, regime detection, scenario engines, ALM/ECL workflows, and a Plumber API surface.',
+      'R toolkit for asset management and banking — turn macro and market data into recession risk, regime signals, scenario stress, rate/credit analytics, and governed reports.',
+    highlights: [
+      'Recession models, Sahm rule, nowcasts, and Minnesota-prior BVAR forecasts',
+      'Scenario libraries with SAA stress, ALM NII/EVE, FTP, and lifetime ECL workflows',
+      'Optional plumber API with model inventory, run lineage, and monitoring',
+    ],
   },
   {
     name: 'value-creation',
