@@ -358,6 +358,13 @@ main {
   width: fit-content;
 }
 
+.featured-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+
 .link-rows {
   list-style: none;
   margin: 0;

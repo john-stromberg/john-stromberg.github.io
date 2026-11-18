@@ -70,11 +70,20 @@ export default function App() {
         <section className="section" id="work">
           <div className="section-head">
             <h2>Featured</h2>
-            <p>Flagship toolkits for research, banking, and PE value creation.</p>
+            <p>
+              Flagship desks and toolkits for macro research, banking, and PE
+              value creation.
+            </p>
           </div>
           <div className="featured-list">
             {featuredProjects.map((project) => {
               const isPrivate = project.access === 'private'
+              const demoUrl =
+                !isPrivate && 'demoUrl' in project ? project.demoUrl : undefined
+              const showHighlights =
+                isPrivate && 'highlights' in project
+                  ? true
+                  : !isPrivate && 'highlights' in project && !demoUrl
 
               return (
                 <article
@@ -83,11 +92,19 @@ export default function App() {
                 >
                   <div className="featured-meta">
                     <p className="kicker">
-                      {isPrivate ? 'Private project' : 'Open source'}
+                      {isPrivate
+                        ? 'Private project'
+                        : demoUrl
+                          ? 'Interactive demo'
+                          : 'Open source'}
                     </p>
                     <h3>
                       {isPrivate ? (
                         project.name
+                      ) : demoUrl ? (
+                        <a href={demoUrl} target="_blank" rel="noreferrer">
+                          {project.name}
+                        </a>
                       ) : (
                         <a href={project.href} target="_blank" rel="noreferrer">
                           {project.name}
@@ -99,7 +116,7 @@ export default function App() {
 
                   <div className="featured-main">
                     <p className="featured-body">{project.blurb}</p>
-                    {isPrivate && 'highlights' in project ? (
+                    {showHighlights && 'highlights' in project ? (
                       <>
                         <ul className="featured-highlights">
                           {project.highlights.map((item) => (
@@ -186,6 +203,25 @@ export default function App() {
 
                   {isPrivate ? (
                     <p className="source-note">Source available on request</p>
+                  ) : demoUrl ? (
+                    <div className="featured-links">
+                      <a
+                        className="text-link"
+                        href={demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live demo
+                      </a>
+                      <a
+                        className="text-link"
+                        href={project.href}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View on GitHub
+                      </a>
+                    </div>
                   ) : (
                     <a
                       className="text-link"
