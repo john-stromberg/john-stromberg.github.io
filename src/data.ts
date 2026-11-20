@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Jack Stromberg',
-  headline: 'Quantitative research and financial software',
+  headline: 'Analytical applications for finance',
   summary:
-    'I build analytical applications and workflows with python, R, and various AI tools',
+    'I build analytical applications for markets, private equity, and advisory work — research desks, econometrics toolkits, and value-creation workflows in Python and R, with AI tools in the loop.',
   github: 'https://github.com/john-stromberg',
   site: 'https://john-stromberg.github.io',
 } as const
