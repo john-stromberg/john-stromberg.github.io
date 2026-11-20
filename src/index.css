@@ -7,7 +7,26 @@
   --paper-faint: rgba(244, 239, 228, 0.42);
   --accent: #3ddc97;
   --accent-soft: rgba(61, 220, 151, 0.16);
+  --accent-hover: #8ef0c4;
+  --accent-glow: rgba(61, 220, 151, 0.14);
+  --hero-wash-a: rgba(61, 220, 151, 0.14);
+  --hero-wash-b: rgba(126, 184, 255, 0.08);
+  --hero-base-a: #050b12;
+  --hero-base-b: #071018;
+  --hero-base-c: #0a1622;
   --line: rgba(244, 239, 228, 0.12);
+  --grid-line: rgba(244, 239, 228, 0.045);
+  --ghost-hover-border: rgba(244, 239, 228, 0.35);
+  --flow-fill: rgba(244, 239, 228, 0.04);
+  --flow-stroke: rgba(244, 239, 228, 0.22);
+  --flow-accent-fill: rgba(61, 220, 151, 0.1);
+  --flow-accent-stroke: rgba(61, 220, 151, 0.45);
+  --flow-edge: rgba(244, 239, 228, 0.35);
+  --flow-arrow: rgba(244, 239, 228, 0.45);
+  --curve-secondary: #7eb8ff;
+  --curve-secondary-soft: rgba(126, 184, 255, 0.2);
+  --curve-paper-soft: rgba(244, 239, 228, 0.12);
+  --curve-paper-mid: rgba(244, 239, 228, 0.45);
   --font-display: 'Syne', 'Avenir Next', 'Segoe UI', sans-serif;
   --font-body: 'Public Sans', 'Helvetica Neue', sans-serif;
   --max: 68rem;
@@ -19,6 +38,99 @@
   background: var(--ink);
   color: var(--paper);
   line-height: 1.55;
+}
+
+[data-theme='harbor'] {
+  color-scheme: dark;
+  --ink: #071428;
+  --ink-elevated: #0c1c36;
+  --paper: #e8eef5;
+  --paper-muted: rgba(232, 238, 245, 0.7);
+  --paper-faint: rgba(232, 238, 245, 0.44);
+  --accent: #5eb0e5;
+  --accent-soft: rgba(94, 176, 229, 0.16);
+  --accent-hover: #9ad0f2;
+  --accent-glow: rgba(94, 176, 229, 0.16);
+  --hero-wash-a: rgba(94, 176, 229, 0.16);
+  --hero-wash-b: rgba(120, 170, 220, 0.1);
+  --hero-base-a: #040e1c;
+  --hero-base-b: #071428;
+  --hero-base-c: #0b1d38;
+  --line: rgba(232, 238, 245, 0.12);
+  --grid-line: rgba(232, 238, 245, 0.045);
+  --ghost-hover-border: rgba(232, 238, 245, 0.35);
+  --flow-fill: rgba(232, 238, 245, 0.04);
+  --flow-stroke: rgba(232, 238, 245, 0.22);
+  --flow-accent-fill: rgba(94, 176, 229, 0.1);
+  --flow-accent-stroke: rgba(94, 176, 229, 0.45);
+  --flow-edge: rgba(232, 238, 245, 0.35);
+  --flow-arrow: rgba(232, 238, 245, 0.45);
+  --curve-secondary: #8ec4e8;
+  --curve-secondary-soft: rgba(142, 196, 232, 0.22);
+  --curve-paper-soft: rgba(232, 238, 245, 0.12);
+  --curve-paper-mid: rgba(232, 238, 245, 0.45);
+}
+
+[data-theme='daylight'] {
+  color-scheme: light;
+  --ink: #eef2f5;
+  --ink-elevated: #e2e8ee;
+  --paper: #122033;
+  --paper-muted: rgba(18, 32, 51, 0.72);
+  --paper-faint: rgba(18, 32, 51, 0.48);
+  --accent: #0f6e56;
+  --accent-soft: rgba(15, 110, 86, 0.12);
+  --accent-hover: #0a5542;
+  --accent-glow: rgba(90, 120, 150, 0.12);
+  --hero-wash-a: rgba(100, 130, 160, 0.14);
+  --hero-wash-b: rgba(70, 100, 130, 0.08);
+  --hero-base-a: #e6ecf2;
+  --hero-base-b: #eef2f5;
+  --hero-base-c: #dfe6ed;
+  --line: rgba(18, 32, 51, 0.12);
+  --grid-line: rgba(18, 32, 51, 0.05);
+  --ghost-hover-border: rgba(18, 32, 51, 0.28);
+  --flow-fill: rgba(18, 32, 51, 0.04);
+  --flow-stroke: rgba(18, 32, 51, 0.2);
+  --flow-accent-fill: rgba(15, 110, 86, 0.1);
+  --flow-accent-stroke: rgba(15, 110, 86, 0.4);
+  --flow-edge: rgba(18, 32, 51, 0.3);
+  --flow-arrow: rgba(18, 32, 51, 0.4);
+  --curve-secondary: #4a6f8f;
+  --curve-secondary-soft: rgba(74, 111, 143, 0.25);
+  --curve-paper-soft: rgba(18, 32, 51, 0.12);
+  --curve-paper-mid: rgba(18, 32, 51, 0.4);
+}
+
+[data-theme='graphite'] {
+  color-scheme: dark;
+  --ink: #12100e;
+  --ink-elevated: #1a1714;
+  --paper: #f0ebe3;
+  --paper-muted: rgba(240, 235, 227, 0.68);
+  --paper-faint: rgba(240, 235, 227, 0.42);
+  --accent: #d4a35c;
+  --accent-soft: rgba(212, 163, 92, 0.14);
+  --accent-hover: #e0b878;
+  --accent-glow: rgba(212, 163, 92, 0.1);
+  --hero-wash-a: rgba(180, 120, 50, 0.1);
+  --hero-wash-b: rgba(140, 100, 60, 0.07);
+  --hero-base-a: #0e0c0a;
+  --hero-base-b: #12100e;
+  --hero-base-c: #1a1612;
+  --line: rgba(240, 235, 227, 0.12);
+  --grid-line: rgba(240, 235, 227, 0.045);
+  --ghost-hover-border: rgba(240, 235, 227, 0.35);
+  --flow-fill: rgba(240, 235, 227, 0.04);
+  --flow-stroke: rgba(240, 235, 227, 0.22);
+  --flow-accent-fill: rgba(212, 163, 92, 0.1);
+  --flow-accent-stroke: rgba(212, 163, 92, 0.42);
+  --flow-edge: rgba(240, 235, 227, 0.35);
+  --flow-arrow: rgba(240, 235, 227, 0.45);
+  --curve-secondary: #c4a882;
+  --curve-secondary-soft: rgba(196, 168, 130, 0.22);
+  --curve-paper-soft: rgba(240, 235, 227, 0.12);
+  --curve-paper-mid: rgba(240, 235, 227, 0.45);
 }
 
 *,
@@ -48,7 +160,7 @@ a {
 }
 
 a:hover {
-  color: #8ef0c4;
+  color: var(--accent-hover);
 }
 
 a:focus-visible {

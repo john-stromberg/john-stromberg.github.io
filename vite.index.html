@@ -15,6 +15,21 @@
       rel="stylesheet"
     />
     <title>Jack Stromberg | Quantitative Research and Financial Software</title>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('portfolio-theme')
+          if (
+            theme === 'phosphor' ||
+            theme === 'harbor' ||
+            theme === 'daylight' ||
+            theme === 'graphite'
+          ) {
+            document.documentElement.setAttribute('data-theme', theme)
+          }
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

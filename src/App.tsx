@@ -1,4 +1,5 @@
 import { HeroVisual } from './components/HeroVisual'
+import { ThemePicker } from './components/ThemePicker'
 import {
   collections,
   featuredProjects,
@@ -13,6 +14,7 @@ export default function App() {
       <a className="skip" href="#work">
         Skip to work
       </a>
+      <ThemePicker />
 
       <header className="hero">
         <div className="hero-atmosphere" aria-hidden="true" />

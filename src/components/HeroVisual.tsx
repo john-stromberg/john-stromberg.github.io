@@ -8,17 +8,17 @@ export function HeroVisual() {
     >
       <defs>
         <linearGradient id="curveA" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#3ddc97" stopOpacity="0.15" />
-          <stop offset="45%" stopColor="#3ddc97" stopOpacity="0.95" />
-          <stop offset="100%" stopColor="#8ef0c4" stopOpacity="0.7" />
+          <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.15" />
+          <stop offset="45%" stopColor="var(--accent)" stopOpacity="0.95" />
+          <stop offset="100%" stopColor="var(--accent-hover)" stopOpacity="0.7" />
         </linearGradient>
         <linearGradient id="curveB" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#7eb8ff" stopOpacity="0.2" />
-          <stop offset="100%" stopColor="#7eb8ff" stopOpacity="0.75" />
+          <stop offset="0%" stopColor="var(--curve-secondary)" stopOpacity="0.2" />
+          <stop offset="100%" stopColor="var(--curve-secondary)" stopOpacity="0.75" />
         </linearGradient>
         <linearGradient id="curveC" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#f4efe4" stopOpacity="0.12" />
-          <stop offset="100%" stopColor="#f4efe4" stopOpacity="0.45" />
+          <stop offset="0%" stopColor="var(--paper)" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="var(--paper)" stopOpacity="0.45" />
         </linearGradient>
         <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
           <feGaussianBlur stdDeviation="2.5" result="blur" />
@@ -37,7 +37,7 @@ export function HeroVisual() {
             y1="36"
             x2={40 + i * 70}
             y2="504"
-            stroke="#f4efe4"
+            stroke="var(--paper)"
             strokeOpacity="0.08"
           />
         ))}
@@ -48,7 +48,7 @@ export function HeroVisual() {
             y1={36 + i * 67}
             x2="920"
             y2={36 + i * 67}
-            stroke="#f4efe4"
+            stroke="var(--paper)"
             strokeOpacity="0.08"
           />
         ))}
@@ -80,8 +80,15 @@ export function HeroVisual() {
         filter="url(#softGlow)"
       />
 
-      <circle className="endpoint" cx="912" cy="96" r="5.5" fill="#3ddc97" />
-      <circle className="endpoint-ring" cx="912" cy="96" r="11" fill="none" stroke="#3ddc97" />
+      <circle className="endpoint" cx="912" cy="96" r="5.5" fill="var(--accent)" />
+      <circle
+        className="endpoint-ring"
+        cx="912"
+        cy="96"
+        r="11"
+        fill="none"
+        stroke="var(--accent)"
+      />
     </svg>
   )
 }
