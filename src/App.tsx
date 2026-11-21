@@ -73,8 +73,8 @@ export default function App() {
           <div className="section-head">
             <h2>Featured</h2>
             <p>
-              Flagship desks and toolkits for macro research, banking, and PE
-              value creation.
+              Flagship desks and toolkits for private wealth, macro research,
+              banking, and PE value creation.
             </p>
           </div>
           <div className="featured-list">

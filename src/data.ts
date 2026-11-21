@@ -16,12 +16,26 @@ export const focusLanes = [
     body: 'Fixed-income analytics spanning curves, spreads, ALM exposures, and path-dependent credit outcomes.',
   },
   {
-    title: 'Advisor systems',
-    body: 'Planning workflows, APIs, and .NET services that turn research into tools advisors can trust daily.',
+    title: 'Private wealth',
+    body: 'Firm-book planning, asset allocation, manager selection, tax efficiency, and automations between client meetings.',
   },
 ] as const
 
 export const featuredProjects = [
+  {
+    name: 'Wealth Center',
+    access: 'open-source' as const,
+    href: 'https://github.com/john-stromberg/wealth-center',
+    demoUrl: 'https://john-stromberg.github.io/wealth-center/',
+    stack: 'Next.js · TypeScript',
+    blurb:
+      'Private wealth firm platform: household planning, strategic allocation, manager lineup, tax efficiency, and an automation center that queues drift, tax, RMD, and meeting-pack work between reviews.',
+    highlights: [
+      'Firm book with sample households, IPS bands, and exception badges',
+      'Allocation, managers, and tax-location workflows with tax-aware rebalance proposals',
+      'Deterministic automations with rule traces and meeting-pack drafts',
+    ],
+  },
   {
     name: 'Macro Desk',
     access: 'open-source' as const,
@@ -81,17 +95,5 @@ export const collections = [
     count: 12,
     href: 'https://github.com/john-stromberg/quant-research-r',
     stack: 'R',
-  },
-  {
-    name: 'Advisor Platform',
-    count: 9,
-    href: 'https://github.com/john-stromberg/advisor-platform',
-    stack: '.NET',
-  },
-  {
-    name: 'Wealth Planning Apps',
-    count: 4,
-    href: 'https://github.com/john-stromberg/wealth-planning-apps',
-    stack: 'Python / Streamlit',
   },
 ] as const
