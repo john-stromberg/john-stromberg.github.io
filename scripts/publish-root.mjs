@@ -1,4 +1,4 @@
-import { cpSync, existsSync, rmSync } from 'node:fs'
+import { cpSync, existsSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -9,6 +9,9 @@ rmSync(join(root, 'assets'), { recursive: true, force: true })
 cpSync(join(dist, 'assets'), join(root, 'assets'), { recursive: true })
 cpSync(join(dist, 'index.html'), join(root, 'index.html'))
 cpSync(join(dist, 'favicon.svg'), join(root, 'favicon.svg'))
+
+// GitHub Pages (legacy Jekyll) skips paths starting with _; disable Jekyll.
+writeFileSync(join(root, '.nojekyll'), '')
 
 // Static demos from Vite public/ (e.g. /macro-desk, /wealth-center)
 for (const demo of ['macro-desk', 'wealth-center']) {
