@@ -37,6 +37,19 @@ export const featuredProjects = [
     ],
   },
   {
+    name: 'pwm-toolkit',
+    access: 'open-source' as const,
+    href: 'https://github.com/john-stromberg/pwm-toolkit',
+    stack: 'Python · Streamlit',
+    blurb:
+      'Private wealth analyst and PM toolkit: household analytics, tax-aware rebalancing, TLH, Roth/RMD planning, Monte Carlo goals, custodian imports, book exceptions, and client reports.',
+    highlights: [
+      'Library + CLI + Streamlit for IPS drift, performance, rebalance, and tax workflows',
+      'Custodian CSV import, reconciliation, book-of-business exception scanning',
+      'Roth conversion, RMD, and Monte Carlo spending-success analysis',
+    ],
+  },
+  {
     name: 'Macro Desk',
     access: 'open-source' as const,
     href: 'https://github.com/john-stromberg/macro-lens',
@@ -89,6 +102,12 @@ export const collections = [
     count: 8,
     href: 'https://github.com/john-stromberg/fixed-income-analytics',
     stack: 'Python',
+  },
+  {
+    name: 'Wealth Planning Apps',
+    count: 5,
+    href: 'https://github.com/john-stromberg/wealth-planning-apps',
+    stack: 'Python / Streamlit',
   },
   {
     name: 'Quantitative Research in R',
