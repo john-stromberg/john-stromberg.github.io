@@ -1,0 +1,7 @@
+:HL["/macro-desk/_next/static/chunks/24fyjvfsxs4c7.css","style"]
+:HL["/macro-desk/_next/static/media/53897e768d329f66-s.p.3t6q91iet4nsy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/macro-desk/_next/static/media/cb4b92673aedbbad-s.p.0-95eo-012xnf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/macro-desk/_next/static/media/d902bc2bfdd0a4cb-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"trade-support","h":96,"c":"$Q2"}]]
+0:{"b":"ZjYU2TKfrZZ0AyuTlR74x","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

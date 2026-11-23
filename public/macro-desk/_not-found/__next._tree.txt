@@ -1,4 +1,4 @@
-:HL["/macro-desk/_next/static/chunks/30wsg6_jc9ut_.css","style"]
+:HL["/macro-desk/_next/static/chunks/24fyjvfsxs4c7.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"zOsffi6Nqr7MECrKGf0-Z","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"ZjYU2TKfrZZ0AyuTlR74x","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
